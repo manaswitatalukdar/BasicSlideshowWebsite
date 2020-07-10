@@ -327,15 +327,15 @@ a:hover svg rect {
 }
 
 .photo1 {
-  background-image: url(elephant.jpeg);
+  background-image: url(image/elephant.jpeg);
 }
 
 .photo2 {
-  background-image: url(camera.jpeg);
+  background-image: url(image/camera.jpeg);
 }
 
 .photo3 {
-  background-image: url(coast.jpeg);
+  background-image: url(image/coast.jpeg);
 }
 
 .photo1,
