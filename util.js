@@ -58,11 +58,29 @@ const setImagePosition = (slide, index) => {
 images.forEach(setImagePosition);
 let counter = 0;
 
+if (counter === 0) {
+  document.getElementById("txt1-1").style.animation = "txt1-1 5s";
+  document.getElementById("txt1-2").style.animation = "txt1-2 5s";
+} else {
+  document.getElementById("txt1-1").style.animation = "";
+  document.getElementById("txt1-2").style.animation = "";
+}
+
 nextBtn.addEventListener("click", () => {
+  console.log(counter);
   const current = slides.querySelector(".current");
   const currentInd = nav.querySelector(".current");
   let next = current.nextElementSibling;
   let nextInd = currentInd.nextElementSibling;
+  if (counter === 1 || counter === len - 1) {
+    document.getElementById("txt1-1").style.animation = "txt1-1 6s";
+    document.getElementById("txt1-2").style.animation = "txt1-2 6s";
+    console.log("welcome");
+  } else {
+    document.getElementById("txt1-1").style.animation = "";
+    document.getElementById("txt1-2").style.animation = "";
+  }
+
   if (counter >= len - 1) {
     next = images[0];
     nextInd = dots[0];
@@ -85,6 +103,15 @@ prevBtn.addEventListener("click", () => {
   const currentInd = nav.querySelector(".current");
   let prev = current.previousElementSibling;
   let prevInd = currentInd.previousElementSibling;
+  if (counter === 1 || counter === len - 1) {
+    document.getElementById("txt1-1").style.animation = "txt1-1 6s";
+    document.getElementById("txt1-2").style.animation = "txt1-2 6s";
+    console.log("welcome");
+  } else {
+    document.getElementById("txt1-1").style.animation = "";
+    document.getElementById("txt1-2").style.animation = "";
+  }
+
   if (counter <= 0) {
     prev = images[len - 1];
     prevInd = dots[len - 1];

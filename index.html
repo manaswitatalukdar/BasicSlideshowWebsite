@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Let's see what this can be made upto">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Scrapbook</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="header">
- <div id="myMenu" class="menu">
-    <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Let's see what this can be made upto" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Scrapbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="myMenu" class="menu">
+      <ul>
         <li onclick="loadError()">Home</li>
         <li onclick="loadError()">About</li>
         <li onclick="loadError()">Snapshots</li>
         <li onclick="loadError()">Memories</li>
-    </ul>
- </div>
- <div id="myMain" class="main" >
-    <div class="container" onclick="toggle(this);blackout();">
+      </ul>
+    </div>
+    <div id="myMain" class="main">
+      <div class="container" onclick="toggle(this);blackout();">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-        </div>
-    <div class="menuName">menu</div> 
- </div>
+      </div>
+      <div class="menuName">menu</div>
+    </div>
 
- <div class="carousel">
-     <div class="carousel-slides">
-        <div class="image current"><img src="alpsNew.jpg"> 
-         <h1 id="welcome">Welcome</h1>
-         <p id="scroll"> Scroll for Stories</p>
+    <div class="carousel">
+      <div class="carousel-slides">
+        <div class="image current">
+          <img src="alpsNew.jpg" />
+          <h1 id="txt1-1">Welcome</h1>
+          <p id="txt1-2">scroll for stories</p>
         </div>
-        <div class="image"><img src="art.jpg"></div>
-        <div class="image"><img src="sea.jpg"></div>
-        <div class="image"><img src="nature1.jpeg"></div>
-        <div class="image"><img src="flowers.jpeg"></div>
-       <!-- <div class="image"><img src="alpsNew.jpg"></div>-->
-     </div>
-    <div class="carousel-indicator">
+
+        <div class="image">
+          <img src="art.jpg" />
+          <a href="#">
+            <svg><rect></rect></svg>
+            <p id="txt2-1">A Photo Gallery</p>
+          </a>
+        </div>
+        <div class="image"><img src="sea.jpg" /></div>
+        <div class="image"><img src="nature1.jpeg" /></div>
+        <div class="image"><img src="flowers.jpeg" /></div>
+      </div>
+      <div class="carousel-indicator">
         <button class="ind current"></button>
         <button class="ind"></button>
         <button class="ind"></button>
         <button class="ind"></button>
         <button class="ind"></button>
-     </div>
- </div>
+      </div>
+    </div>
 
-<button class="next" id="nextBt">next</button>
-  <div id="bar5"></div>
-  <div id="bar4"></div>
-<button class="prev" id="prevBt">prev</button>
-  <div id="bar7"></div>
-  <div id="bar6"></div>
+    <button class="next" id="nextBt">next</button>
+    <div id="bar5"></div>
+    <div id="bar4"></div>
+    <button class="prev" id="prevBt">prev</button>
+    <div id="bar7"></div>
+    <div id="bar6"></div>
 
-</div>
-<div class="overhead" >
-    Scroll Up and Down this page to see the parallax scrolling effect.
-    This div is just here to enable scrolling.
-    Tip: Try to remove the background-attachment property to remove the scrolling effect.
-</div>
-<script src="util.js"></script>
-</body>
+    <div class="overhead">
+      Scroll Up and Down this page to see the parallax scrolling effect. This
+      div is just here to enable scrolling. Tip: Try to remove the
+      background-attachment property to remove the scrolling effect.
+    </div>
+    <div class="photo1"></div>
+    <div class="overhead">
+      Scroll Up and Down this page to see the parallax scrolling effect. This
+      div is just here to enable scrolling. Tip: Try to remove the
+      background-attachment property to remove the scrolling effect.
+    </div>
+    <div class="photo2"></div>
+    <div class="overhead">
+      Scroll Up and Down this page to see the parallax scrolling effect. This
+      div is just here to enable scrolling. Tip: Try to remove the
+      background-attachment property to remove the scrolling effect.
+    </div>
+    <div class="photo3"></div>
+    <div class="overhead">
+      Scroll Up and Down this page to see the parallax scrolling effect. This
+      div is just here to enable scrolling. Tip: Try to remove the
+      background-attachment property to remove the scrolling effect.
+    </div>
+    <script src="util.js"></script>
+  </body>
 </html>
