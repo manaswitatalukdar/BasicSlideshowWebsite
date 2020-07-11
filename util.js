@@ -80,6 +80,13 @@ nextBtn.addEventListener("click", () => {
     document.getElementById("txt1-1").style.animation = "";
     document.getElementById("txt1-2").style.animation = "";
   }
+  if (counter === 2 || counter === 0) {
+    document.getElementById("txt2-2").style.animation =
+      "typing 3.5s steps(100, end)";
+    console.log("gallery");
+  } else {
+    document.getElementById("txt2-2").style.animation = "";
+  }
 
   if (counter >= len - 1) {
     next = images[0];
@@ -103,13 +110,21 @@ prevBtn.addEventListener("click", () => {
   const currentInd = nav.querySelector(".current");
   let prev = current.previousElementSibling;
   let prevInd = currentInd.previousElementSibling;
-  if (counter === 1 || counter === len - 1) {
+  if (counter === 1 || counter === 0) {
     document.getElementById("txt1-1").style.animation = "txt1-1 6s";
     document.getElementById("txt1-2").style.animation = "txt1-2 6s";
     console.log("welcome");
   } else {
     document.getElementById("txt1-1").style.animation = "";
     document.getElementById("txt1-2").style.animation = "";
+  }
+
+  if (counter === 2 || counter === len - 2) {
+    document.getElementById("txt2-2").style.animation =
+      "typing 3.5s steps(100, end)";
+    console.log("gallery");
+  } else {
+    document.getElementById("txt2-2").style.animation = "";
   }
 
   if (counter <= 0) {

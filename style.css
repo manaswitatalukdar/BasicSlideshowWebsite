@@ -173,14 +173,39 @@ button:focus {
   font-size: 3rem;
   font-style: italic;
   font-family: Comic Sans, Comic Sans MS, cursive;
-  color: white;
-  text-shadow: white 2px 3px;
+  color: black;
   position: absolute;
   text-align: center;
   left: 1350px;
   top: 50px;
   z-index: 1;
   transition: 2s;
+}
+
+#txt2-2 {
+  width: fit-content;
+  margin: 0px auto;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: Comic Sans, Comic Sans MS, cursive;
+  color: black;
+  position: absolute;
+  text-align: center;
+  left: 1600px;
+  top: 200px;
+  z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
 }
 
 a svg,
@@ -194,7 +219,7 @@ a svg rect {
 }
 
 a svg rect {
-  stroke: rgb(245, 248, 247);
+  stroke: black;
   stroke-width: 4;
   transition: 1.5s;
   stroke-dasharray: 960;
