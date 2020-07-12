@@ -1,5 +1,6 @@
 let flag = 0;
 let flag2 = 0;
+let flag3 = 0;
 
 function loadError() {
   location.href = "login.html";
@@ -13,6 +14,26 @@ function dropdown() {
 function revert() {
   document.getElementById("myMenu").style.height = "0px";
   document.getElementById("myMain").style.marginBottom = "0px";
+}
+
+function showstory() {
+  document.getElementById("crsl").style.height = "0px";
+  document.getElementById("nav").innerHTML = "&#8593;";
+}
+
+function hidestory() {
+  document.getElementById("crsl").style.height = "650px";
+  document.getElementById("nav").innerHTML = "&#8595;";
+}
+
+function moveStory() {
+  if (flag3 === 0) {
+    showstory();
+    flag3 = 1;
+  } else {
+    hidestory();
+    flag3 = 0;
+  }
 }
 
 function toggle(x) {
@@ -61,9 +82,11 @@ let counter = 0;
 if (counter === 0) {
   document.getElementById("txt1-1").style.animation = "txt1-1 5s";
   document.getElementById("txt1-2").style.animation = "txt1-2 5s";
+  document.getElementById("nav").style.animation = "txt1-2 5s";
 } else {
   document.getElementById("txt1-1").style.animation = "";
   document.getElementById("txt1-2").style.animation = "";
+  document.getElementById("nav").style.animation = "";
 }
 
 nextBtn.addEventListener("click", () => {
